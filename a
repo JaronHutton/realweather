@@ -1,0 +1,47 @@
+public class WeatherReport
+{
+
+	public static void main(String[] args) 
+	{
+		//opening line to the program
+		
+		System.out.println("Start understanding other people's temperatures! Please enter the degrees in Fahrenheit to commence conversion! (^u^)");
+		
+		Scanner cin = new Scanner (System.in);
+		
+		//set the variables for both temperatures. I set fahrenheit to Fy
+		//and set celsius to Ch
+		
+		float Fy = cin.nextFloat();
+		float Ch = 0;
+		
+		//32 taken from Fahrenheit is set to celsius 
+		
+		Ch = Fy-32;
+		
+		//Celsius is multiplied by five ninths, and then that is set as the new celsius variable
+		
+		Ch = Ch*5/9;
+
+		//this is stating the finished calculation to user
+		
+		System.out.println("ALrighty! (>u<) Here is the temperature for you today~! " + Ch );
+		
+		//this adds a little extra statement if it is cold.
+		
+		if (Fy<=32)
+		{
+			System.out.println("Pick up knitting today, perhaps... it's cold (O~O).");
+		}
+		
+		//Extra statement if it is hot
+		
+		else if (Fy>=90)
+		{
+			System.out.println("Rip off your sleeves! Or just change to a cooler shirt. It's getting toasty.(OwO)");
+		}
+			
+
+	}
+
+}
